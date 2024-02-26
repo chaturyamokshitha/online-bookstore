@@ -1,67 +1,80 @@
-body{
-    margin:0;
-    padding:0px;
-   
+body {
+    margin: 0;
+    padding: 0px;
+
 }
 
-h2{
+h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 35px;
-    font-weight:500;
+    font-weight: 500;
+padding-top: 20px;
 }
-.newest p{
+.newest{
+    background-color: aliceblue;
+}
+.newest p {
     text-align: center;
     margin-bottom: 50px;
-    color:grey;
+    color: grey;
 }
-.newest img{
-    height:200px;
-    width:160px;
+
+.newest img {
+    height: 200px;
+    width: 160px;
     margin-bottom: 40px;
     box-shadow: -10px 0px 10px rgba(58, 59, 56, 0.5);
     padding-right: 20px;
 }
-.atc{
+
+.atc {
     display: none;
 }
-.books{
-    display:flex;
+
+.books {
+    display: flex;
     flex-direction: row;
     margin: 50px 100px 0px 50px;
 }
-.book1{
+
+.book1 {
     padding-right: 120px;
     position: relative;
     padding-left: 50px;
 }
 
-.book2{
+.book2 {
     padding-right: 120px;
-    
-        position: relative;
+
+    position: relative;
 }
-.book3{
+
+.book3 {
     padding-right: 120px;
     position: relative;
 }
-.book4{
+
+.book4 {
     padding-right: 120px;
-   
-  position: relative;
+
+    position: relative;
 }
-.book5{
-  position: relative;  
-} 
-#title{
+
+.book5 {
+    position: relative;
+}
+
+#title {
     font-size: 18px;
 
 }
-#cost{
-font-size:15px;
-padding-left: 70px;
-position: relative;
-color:grey;
+
+#cost {
+    font-size: 15px;
+    padding-left: 70px;
+    position: relative;
+    color: grey;
 }
 
 
@@ -72,7 +85,142 @@ color:grey;
     left: 0;
 }
 
-#cost:hover + .atc {
+#cost:hover+.atc {
     display: inline-block;
     padding-left: 50px;
+}
+
+
+
+
+
+
+.container {
+    background-image: url("https://i.pinimg.com/originals/e3/4a/b0/e34ab0ab607d7139b7a9ad39f7bc3da7.jpg");
+    background-size: cover;
+    /* Ensures the background image covers the entire container */
+    background-attachment: fixed;
+    /* Fixes the background image in place */
+    height: 100vh;
+    /* Adjust this according to your needs */
+    overflow-y: scroll;
+    /* Enables scrolling if content exceeds container height */
+}
+
+.content {
+    position: relative;
+    /* Makes the content positioned relative to the container */
+    z-index: 1;
+    /* Ensures the content stays on top of the background image */
+}
+h1{
+   padding:70px;
+    color:white;
+}
+
+.newest:nth-child(2){
+    background-color: aliceblue;
+    padding-bottom: 70px;
+}
+
+
+
+
+
+
+
+.listofbooks{
+    display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10%;
+background-color: rgb(217, 215, 215);
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+   padding-bottom:30px;
+    background-color: white;
+    margin-right: 50px;
+}
+.list img{
+    height:355px;
+    width:370px;
+}
+.list h3{
+text-align: center;
+font-size: 25px;
+font-weight: 50;
+}
+.list span{
+    text-align: center;
+    color:grey;
+}
+
+
+
+
+
+
+
+
+
+
+.container1 {
+    background-image: url("https://beyondthebookcast.com/wp-content/uploads/2019/01/Bookstore.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    
+    overflow-y: scroll;
+}
+
+.content1 {
+    position: relative;
+    z-index: 1;
+   
+}
+#p1 {
+    text-align: center;
+    color:aliceblue
+}
+#h1{
+    color:aliceblue;
+}
+.input{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+/* Style the input and button as needed */
+input[type="text"],
+button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 200px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+  
+
+
+
+
+
+.about{
+display: flex;
+    flex-direction: column;
+}
+.aboutus{
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+    padding:10%;
+    margin:0;
 }
