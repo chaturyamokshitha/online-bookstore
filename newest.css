@@ -4,6 +4,107 @@ body {
 
 }
 
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+      
+       
+  
+}
+.navigation img{
+    height:90px;
+    width:190px;
+    padding-right: 40rem;
+   
+}
+
+.navigation a{
+    padding-left: 3rem;
+    margin-top: 2rem;
+    text-decoration: none ;
+}
+
+.contain{
+    padding:5%;
+    background-color: pink;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+}
+.contain img{
+    height: 250px;
+   box-shadow: 20px 20px 20px rgba(0,5,0,5);
+}
+.contain img:nth-child(2){
+    position: relative;
+   
+    height: 300px;
+        
+}
+.contain img:nth-child(3) {
+    position: relative;
+   
+}
+.infobook{
+    display: flex;
+        flex-direction: row;
+        padding-right: 20rem;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    
+}
+.info h2{
+    font-size: 50px;
+}
+.info button{
+    margin-left: 10rem;
+}
+
+
+
+.sec1{
+    flex-direction: column;
+    background-color: rgb(234, 222, 222);
+    padding:5rem 12% 5rem 12%;
+}
+.sec1:nth-child(1){
+    margin-left: 5rem;
+}
+.sec1:nth-child(2) {
+    margin-left: 15rem;
+}
+.sec1 h3{
+    font-size: 20px;
+}
+.sec1 button{
+    float:right;
+}
+.types{
+display:flex;
+flex-direction: row;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 h2 {
     text-align: center;
     margin-bottom: 20px;
