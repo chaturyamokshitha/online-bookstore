@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .signin{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding:4% 2% 4% 2%;
+            background-color: pink;
+            margin: 200px 500px 100px 500px;
+            border-radius: 5px;
+        }
+         #detail{
+            display: flex;
+            flex-direction: row;
+           align-items: center;
+    margin-bottom: 10px;
+        }
+        #detail input{
+           flex: 1; /* Fill remaining space */
+    height: 30px;
+    max-width: calc(100% - 140px);
+    border-radius: 5px;
+    text-align: center;
+        }
+        #detail label{
+            width: 120px; /* Adjust the width as needed */
+    margin-right: 20px;
+        }
+         button{
+                height: 40px;
+          width:100px;
+          border-radius:5px ;
+          
+          margin:20px auto;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="navbar.html" name="navbar" frameborder="0" scrolling="no" width="100%" height="80px"></iframe>
+    <div class="signin">
+        <section id="detail">
+            <label>username</label>
+            <input type="email" placeholder="username/email">
+        </section>
+        <section id="detail">
+            <label>Password</label>
+            <input type="password" placeholder="enter your password">
+        </section>
+       <button>Sign In</button>
+       
+        <span>Don't have a account <a href="signup.html">sign up</a></span>
+    </div>
+</body>
+</html>

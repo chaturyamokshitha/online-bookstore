@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+        .signup{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding:4% 2% 4% 2%;
+            background-color: pink;
+            margin: 200px 500px 100px 500px;
+            border-radius: 5px;
+        }
+        #name{
+            display: flex;
+            flex-direction: row;
+           align-items: center;
+    margin-bottom: 10px;
+        }
+        #name input{
+           flex: 1; /* Fill remaining space */
+    height: 30px;
+    max-width: calc(100% - 140px);
+    border-radius: 5px;
+    text-align: center;
+        }
+        #name label{
+            width: 120px; /* Adjust the width as needed */
+    margin-right: 20px;
+        }
+         button{
+                height: 40px;
+          width:100px;
+          border-radius:5px ;
+          
+          margin:20px auto;
+        }
+        #check{
+            margin-top: 30px;
+        }
+         a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="navbar.html" name="navbar" frameborder="0" scrolling="no" width="100%" height="80px"></iframe>
+    <div class="signup">
+        <h2>Create an account</h2>
+       <section id="name">
+        <label>Full name</label>
+        <input type="text" placeholder="enter your full name">
+       </section>
+    <section id="name">
+    <label>phone number</label>
+    <input type="number">
+    </section>
+        <section id="name">
+            <label>Email</label>
+            <input type="email" placeholder="enter your mail">
+        </section>
+    <section id="name">
+        <label>Password</label>
+        <input type="password" >
+    </section>
+    <section id="check">
+        <input type="checkbox">
+        <label>I have agreed to terms and Conditions</label>
+    </section>
+    <button>Sign up</button>
+    
+        </form>
+        <span>I'm already a member <a href="signin.html">sign in</a></span>
+    </div>
+</body>
+</html>

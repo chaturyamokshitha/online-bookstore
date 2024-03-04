@@ -1,0 +1,124 @@
+.mains {
+    padding:11%;
+   text-align: center;
+background-color:bisque;
+   margin-bottom: 120px;
+   
+}
+.mains h2{
+font-size: 50px;
+}
+.books {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 100px 0px 50px;
+}
+
+
+.book1 {
+    padding-right: 120px;
+    position: relative;
+    padding-left: 50px;
+}
+
+.book2 {
+    padding-right: 120px;
+
+    position: relative;
+}
+
+.book3 {
+    padding-right: 120px;
+    position: relative;
+}
+
+.book4 {
+    padding-right: 120px;
+
+    position: relative;
+}
+
+.book5 {
+    position: relative;
+}
+
+#title {
+    font-size: 18px;
+
+}
+.books img{
+    height: 200px;
+        width: 160px;
+}
+
+#cost {
+    font-size: 15px;
+    padding-left: 70px;
+    position: relative;
+    color: grey;
+}
+
+.atc {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container4 {
+    background-image: url("https://beyondthebookcast.com/wp-content/uploads/2019/01/Bookstore.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+height: 100vh;
+    overflow-y: scroll;
+}
+
+.content4{
+    position: relative;
+    z-index: 1;
+
+}
+
+#p1 {
+    text-align: center;
+    color: aliceblue
+}
+
+#h1 {
+    color: aliceblue;
+    text-align: center;
+}
+
+.input {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+/* Style the input and button as needed */
+input[type="text"],
+button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 200px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
