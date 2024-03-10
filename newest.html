@@ -29,20 +29,27 @@
             <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2017/07/attachment_78895234.png?auto=format&q=60&fit=max&w=930">
             <img src="https://www.creativindiecovers.com/wp-content/uploads/2012/02/9780718155209.jpg">
             </div>
-            <div class="info">
+            <div class="info" id="info">
             <h2>This Month</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam iure ea doloremque architecto quas labore nihil, nemo quidem incidunt, quos animi expedita repellendus debitis at perferendis non quam quae quasi.</p>
-                <button>Read More</button>
+                <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam iure ea doloremque architecto quas labore nihil, nemo quidem incidunt, quos animi expedita repellendus debitis at perferendis non quam quae quasi.</p>
+                <button id="readmore">Read More</button>
         </div>
         </div>
         <div class="types">
             <section class="sec1">
                 <h3>Order E-books online</h3>
-                <button>Learn More</button>
+               <div class="togglec" >
+            <p class="para1" id="c1" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eum voluptas amet
+                cupiditate facere labore, et, eius perspiciatis asperiores vitae illo modi repudiandae assumenda eaque dolores ea
+                magni beatae. Consequuntur. hidden</p>
+            <button id="b1">Learn More</button></div>
+               
             </section>
             <section class="sec1">
             <h3>Order E-books online</h3>
-            <button>Learn more</button>
+            <p class="para2" id="c2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore sint doloremque voluptatem maiores? Sed unde nobis ducimus quia distinctio explicabo, molestiae vel beatae id nesciunt fugiat maiores tenetur rerum rem?
+            Vero porro neque laudantium libero quibusdam. Quisquam voluptatum amet ad dolorem maiores! Fuga officiis sit consequuntur. Ex aliquid dignissimos perferendis facere, quisquam, nemo esse quae asperiores nobis recusandae voluptatem libero.</p>
+            <button id="b2" class="toggle-btn">Learn more</button>
             </section>
         </div>
 
@@ -241,7 +248,65 @@
     </div>
 </div>
 
+
+
 <script src="https://kit.fontawesome.com/9f5026aa16.js" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+        // Store original text and new text
+        const originalText = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem soluta tempora labore sed facere dignissimos, a ipsam est fuga incidunt quas magnam quasi quibusdam rerum accusantium quae, distinctio debitis? Voluptatibus.";
+        const newText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quibusdam nisi soluta maiores ad saepe, adipisci vitae aliquid fugit quo esse tempora molestias et! Suscipit incidunt quasi natus consequuntur harumExercitationem saepe eos voluptates reprehenderit maiores autem.Non commodi, id aperiam quidem, doloremque quae iure accusantium tempore optio reprehenderit cum, veritatis delectus.Dolorem laudantium id ipsum eos quas officiis quo!Illum, ipsam dicta ratione velit nesciunt dolorum quis eum ducimus.At sint sed, earum, dolorum vero culpa architecto, eaque nam asperiores possimus magnam quisquam atque modi voluptates rerum natus sapiente";
+
+       
+        const contentElement = document.getElementById("para");
+        const toggleButton = document.getElementById("readmore");
+
+      
+
+        // Add click event listener to the button
+        toggleButton.addEventListener("click", () => {
+            // Check if the current text is the original text
+            if (contentElement.textContent === originalText) {
+                // If yes, change it to the new text
+                contentElement.textContent = newText;
+            } else {
+                // If not, change it back to the original text
+                contentElement.textContent = originalText;
+            }
+
+          
+        });
+    
+
+       
+     
+
+    const button = document.getElementById('b1');
+      const para1 = document.getElementById('c1');
+
+      button.addEventListener('click', () => {
+          // Check the current display style and toggle it
+          if (para1.style.display === "none" || para1.style.display === "") {
+              para1.style.display = "block"; // Make the paragraph visible
+          } else {
+              para1.style.display = "none"; // Hide the paragraph
+          }
+      });
+      const button2 = document.getElementById('b2');
+      const para2 = document.getElementById('c2');
+
+      button2.addEventListener('click', () => {
+          // Check the current display style and toggle it
+          if (para2.style.display === "none" || para2.style.display === "") {
+              para2.style.display = "block"; // Make the paragraph visible
+          } else {
+              para2.style.display = "none"; // Hide the paragraph
+          }
+      });
+
+    });
+</script>
 </body>
 
 </html>
+
