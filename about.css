@@ -1,3 +1,74 @@
+.navigation {
+    display: flex;
+    /* Use flexbox to align items */
+    align-items: center;
+    /* Align items vertically in the center */
+    width: 100%;
+
+}
+
+.navigation ul,
+.navigation li {
+    margin: 0;
+    margin-left: 60px;
+    padding: 0;
+}
+
+.navigation ul {
+    list-style: none;
+    width: 100%;
+}
+
+.navigation li {
+    float: left;
+    position: relative;
+    width: auto;
+}
+
+.navigation a {
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 1px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.navigation li:hover a {
+    background: aliceblue;
+}
+
+#sub {
+    visibility: hidden;
+    position: absolute;
+    right: 60px;
+
+    width: 100%;
+    top: 35px;
+    z-index: 1;
+    opacity: 0;
+
+
+}
+
+li:hover ul#sub {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+#sub li {
+    float: none;
+    width: 100%;
+}
+
+img {
+    height: 100px;
+    width: 200px;
+    padding-right: 35rem;
+}
+
 .container2 {
     background-image: url("https://i.pinimg.com/originals/e3/4a/b0/e34ab0ab607d7139b7a9ad39f7bc3da7.jpg");
     background-size: cover;
