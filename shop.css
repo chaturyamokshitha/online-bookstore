@@ -1,3 +1,77 @@
+.navigation {
+    display: flex;
+    /* Use flexbox to align items */
+    align-items: center;
+    /* Align items vertically in the center */
+    width: 100%;
+
+}
+
+.navigation ul,
+.navigation li {
+    margin: 0;
+    margin-left: 60px;
+    padding: 0;
+}
+
+.navigation ul {
+    list-style: none;
+    width: 100%;
+}
+
+.navigation li {
+    float: left;
+    position: relative;
+    width: auto;
+}
+
+.navigation a {
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 1px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.navigation li:hover a {
+    background: aliceblue;
+}
+
+#sub {
+    visibility: hidden;
+    position: absolute;
+    right: 60px;
+
+    width: 100%;
+    top: 35px;
+    z-index: 1;
+    opacity: 0;
+
+
+}
+
+li:hover ul#sub {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+#sub li {
+    float: none;
+    width: 100%;
+}
+
+.navigation img {
+    height: 100px;
+    width: 200px;
+    padding-right: 35rem;
+}
+
+
+
+
 .mains {
     padding:11%;
    text-align: center;
@@ -11,9 +85,16 @@ font-size: 50px;
 .books {
     display: flex;
     flex-direction: row;
-    margin: 50px 100px 0px 50px;
+    margin: 100px 100px 100px 50px;
 }
 
+#cost {
+    font-size: 15px;
+
+    padding-left: 70px;
+    position: relative;
+    color: grey;
+}
 
 .book1 {
     padding-right: 120px;
@@ -51,19 +132,35 @@ font-size: 50px;
         width: 160px;
 }
 
-#cost {
-    font-size: 15px;
-    padding-left: 70px;
+.cost-container {
     position: relative;
-    color: grey;
+    display: inline-block;
 }
 
 .atc {
-    display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
+    bottom: 1px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    cursor: pointer;
+    background-color: aliceblue;
+
+
+    border: none;
+    color: black;
+
 }
+
+.cost-container:hover .atc {
+    display: block;
+}
+.navigation a span {
+    position: relative;
+    bottom: 10px;
+}
+
 
 
 
@@ -121,4 +218,119 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* Container for the book details with Flexbox */
+#bookDetails {
+    display: flex;
+    flex-direction: row;
+   
+    align-items: center;
+    /* Aligns items vertically in the center */
+    justify-content: space-around;
+    /* Distributes space around items */
+    max-width: 1000px;
+    /* Sets a maximum width for the container */
+    margin: 20px auto;
+    /* Centers the container and adds some margin */
+    padding: 20px;
+    /* Adds padding inside the container */
+    border: 1px solid #ddd;
+    /* Adds a border around the container */
+    border-radius: 8px;
+    /* Rounds the corners of the container */
+    background-color: #f9f9f9;
+    /* Light background color for the container */
+    flex-wrap: wrap;
+    /* Allows items to wrap in smaller screens */
+}
+
+/* Style for the book image within Flexbox */
+#bookImage {
+    max-width: 200px;
+    /* Limits the maximum width */
+    margin-right: 20px;
+    /* Adds margin to the right */
+    flex-grow: 0;
+    /* Prevents the image from growing */
+    flex-shrink: 0;
+    /* Prevents the image from shrinking */
+}
+
+/* Container for text and buttons to ensure proper alignment */
+.text-and-buttons {
+    display: flex;
+    /* Enables Flexbox layout */
+    flex-direction: column;
+    /* Stacks items vertically */
+    justify-content: center;
+    /* Aligns items in the center vertically */
+    max-width: calc(100% - 220px);
+    /* Adjusts the width accounting for the image */
+}
+
+/* Style adjustments for the title, description, and cost */
+#bookTitle,
+#bookDescription,
+#bookCost {
+    margin-bottom: 10px;
+    /* Adds some space below each item */
+}
+
+/* Flex container for quantity controls and Add to Cart button */
+.controls {
+    display: flex;
+    flex-direction: column;
+    /* Enables Flexbox layout */
+    align-items: center;
+    /* Aligns items vertically in the center */
+    margin-top: 10px;
+    /* Adds margin on top */
+}
+
+/* Style adjustments for quantity controls */
+#decreaseQuantity,
+#increaseQuantity {
+    margin-right: 5px;
+    /* Adds margin to the right */
+}
+
+/* Adjustments to ensure buttons are appropriately sized */
+#decreaseQuantity,
+#increaseQuantity,
+#addToCart {
+    padding: 10px 15px;
+    /* Adds padding inside the buttons */
+    border: none;
+    /* Removes the border */
+    cursor: pointer;
+    /* Changes the cursor to a pointer */
+    font-size: 16px;
+    /* Sets the font size */
+}
+
+/* Additional styles for the Add to Cart button */
+#addToCart {
+    background-color: #28a745;
+    /* Green background */
+    color: white;
+    /* White text */
+    border-radius: 4px;
+    /* Rounds the corners */
+}
+
+/* Hover effect for buttons */
+#decreaseQuantity:hover,
+#increaseQuantity:hover,
+#addToCart:hover {
+    opacity: 0.8;
+    /* Slight transparency on hover */
 }
