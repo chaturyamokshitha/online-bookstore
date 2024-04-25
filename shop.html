@@ -7,12 +7,51 @@
     <link rel="stylesheet" href="shop.css">
 </head>
 <body>
-    <iframe src="navbar.html" name="navbar" frameborder="0" scrolling="no" width="100%" height="80px"></iframe>
+<div class="navigation" id="home">
+    <img src="https://i.pinimg.com/200x150/9a/39/a3/9a39a344c61cb7a99517549b5acc8df7.jpg">
+    <ul>
+        <li><a href="newest.html" target="_top">HOME</a></li>
+        <li><a href="about.html" target="_top">ABOUT</a></li>
+        <li><a href="" target="_top">PRICING </a></li>
+        <li><a href="shop.html" target="_top">SHOP</a>
+            <ul id="sub">
+                <li><a href="google.com">Romance</a></li>
+                <li><a>Comedy</a></li>
+                <li><a>Thriller</a></li>
+                <li><a>Rom-Com</a></li>
+                <li><a>Fantasy</a></li>
+                <li><a>Drama</a></li>
+            </ul>
+        </li>
+        <li><a href="" target="_top"><i class="fa-solid fa-cart-shopping"></i><span class="item-count">0</span></a></li>
+        <li><a href="" target="_top"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+        <li><a href="signup.html" target="_top">SIGN UP</a></li>
+    </ul>
+
+</div>
+<script src="https://kit.fontawesome.com/9f5026aa16.js" crossorigin="anonymous"></script>
+<div class="defaultContent">
     <div class="mains">
     <h2>Shop</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem non et autem eligendi veniam reiciendis rem ducimus nesciunt, suscipit dicta alias, placeat iste quos aspernatur libero? Magnam, amet! Tenetur, soluta?</p>
     </div>
+</div>
+<div id="bookDetails">
+    <img id="bookImage" src="book_image_url_here" alt="Book Image">
+    <div class="text-and-buttons">
+        <h2 id="bookTitle">Book Title Here</h2>
+        <p id="bookDescription">Book description here...</p>
+        <p id="bookCost">$XX.XX</p>
+        <div class="controls">
+            <button id="decreaseQuantity">-</button>
+            <span id="quantity">1</span>
+            <button id="increaseQuantity">+</button>
+            <button id="addToCart">Add to Cart</button>
+        </div>
+    </div>
+</div>
 
+    
 
 
 
@@ -25,34 +64,44 @@
         <div class="book1">
             <img src="https://edit.org/images/cat/book-covers-big-2019101610.jpg">
             <br> <span id="title">Most Popular Editions</span><br>
-            <span id="cost">$40</span>
-            <p class="atc">Add to Cart</p>
+            <div class="cost-container">
+                <span id="cost" class="cost">$40</span>
+                <button class="atc">Add to Cart</button>
+            </div>
         </div>
         <div class="book2">
             <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4gKAnDoeuFrv4lsxXtXk33nTamyzpgFD-zTG8R5Sa7hls6QzwHJjxpAGVWV3MuhwUXXA&usqp=CAU">
             <br><span id="title">Most Popular Fiction</span><br>
-            <span id="cost">$37</span>
-            <p class="atc">Add to Cart</p>
+            <div class="cost-container">
+                <span id="cost" class="cost">$40</span>
+                <button class="atc">Add to Cart</button>
+            </div>
         </div>
         <div class="book3">
             <img src="https://m.media-amazon.com/images/I/41gr3r3FSWL.jpg"><br>
             <span id="title">PSD Box Mockup Book</span><br>
-            <span id="cost">$56</span>
-            <p class="atc">Add to Cart</p>
+            <div class="cost-container">
+                <span id="cost" class="cost">$40</span>
+                <button class="atc">Add to Cart</button>
+            </div>
         </div>
         <div class="book4">
             <img
                 src="https://www.adobe.com/express/create/cover/media_1042ff48ca7f6d77bde5524b0b57a191dd76ee0a0.jpeg?width=400&format=jpeg&optimize=medium">
             <br><span id="title">2020 Popular Editions</span><br>
-            <span id="cost">$20</span>
-            <p class="atc">Add to Cart</p>
+            <div class="cost-container">
+                <span id="cost" class="cost">$40</span>
+                <button class="atc">Add to Cart</button>
+            </div>
         </div>
         <div class="book5">
             <img src="https://www.writersdigest.com/.image/t_share/MTcxMDY0NzcxMzIzNTY5NDEz/image-placeholder-title.jpg">
             <br><span id="title">2019 Editions to Read</span><br>
-            <span id="cost">$49</span>
-            <p class="atc">Add to Cart</p>
+            <div class="cost-container">
+                <span id="cost" class="cost">$40</span>
+                <button class="atc">Add to Cart</button>
+            </div>
         </div>
     </div>
     
@@ -62,36 +111,47 @@
         <div class="book1">
             <img src="https://edit.org/images/cat/book-covers-big-2019101610.jpg">
             <br> <span id="title">Most Popular Editions</span><br>
-            <span id="cost">$40</span>
-            <p class="atc">Add to Cart</p>
+            <div class="cost-container">
+                <span id="cost" class="cost">$40</span>
+                <button class="atc">Add to Cart</button>
+            </div>
         </div>
         <div class="book2">
             <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4gKAnDoeuFrv4lsxXtXk33nTamyzpgFD-zTG8R5Sa7hls6QzwHJjxpAGVWV3MuhwUXXA&usqp=CAU">
             <br><span id="title">Most Popular Fiction</span><br>
-            <span id="cost">$37</span>
-            <p class="atc">Add to Cart</p>
+        <div class="cost-container">
+            <span id="cost" class="cost">$40</span>
+            <button class="atc">Add to Cart</button>
+        </div>
         </div>
         <div class="book3">
             <img src="https://m.media-amazon.com/images/I/41gr3r3FSWL.jpg"><br>
             <span id="title">PSD Box Mockup Book</span><br>
-            <span id="cost">$56</span>
-            <p class="atc">Add to Cart</p>
+        <div class="cost-container">
+            <span id="cost" class="cost">$40</span>
+            <button class="atc">Add to Cart</button>
+        </div>
         </div>
         <div class="book4">
             <img
                 src="https://www.adobe.com/express/create/cover/media_1042ff48ca7f6d77bde5524b0b57a191dd76ee0a0.jpeg?width=400&format=jpeg&optimize=medium">
             <br><span id="title">2020 Popular Editions</span><br>
-            <span id="cost">$20</span>
-            <p class="atc">Add to Cart</p>
+            <div class="cost-container">
+                <span id="cost" class="cost">$40</span>
+                <button class="atc">Add to Cart</button>
+            </div>
         </div>
         <div class="book5">
             <img src="https://www.writersdigest.com/.image/t_share/MTcxMDY0NzcxMzIzNTY5NDEz/image-placeholder-title.jpg">
             <br><span id="title">2019 Editions to Read</span><br>
-            <span id="cost">$49</span>
-            <p class="atc">Add to Cart</p>
+            <div class="cost-container">
+                <span id="cost" class="cost">$40</span>
+                <button class="atc">Add to Cart</button>
+            </div>
         </div>
     </div>
+
    
 
 
@@ -103,6 +163,85 @@
                 <input type="text" placeholder="Enter your email">
                 <button>Submit</button>
             </div>
+        
+       
+            <script src="https://kit.fontawesome.com/9f5026aa16.js" crossorigin="anonymous"></script>
+        
+           <script>
+                const books = [
+                {id: 1, title: "Book 1 Title", image: "https://edit.org/images/cat/book-covers-big-2019101610.jpg", description: "Description for Book 1", cost: "$10" },
+                {id: 2, title: "Book 2 Title", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4gKAnDoeuFrv4lsxXtXk33nTamyzpgFD-zTG8R5Sa7hls6QzwHJjxpAGVWV3MuhwUXXA&usqp=CAU", description: "Description for Book 2", cost: "$15" },
+                   { id: 3, title: "Book 3 Title", image: "https://m.media-amazon.com/images/I/41gr3r3FSWL.jpg", description: "Description for Book 3", cost: "$25" },
+                      { id: 4, title: "Book 4 Title", image: "https://www.adobe.com/express/create/cover/media_1042ff48ca7f6d77bde5524b0b57a191dd76ee0a0.jpeg?width=400&format=jpeg&optimize=medium", description: "Description for Book 4", cost: "$45" },
+                         { id: 5, title: "Book 5 Title", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4gKAnDoeuFrv4lsxXtXk33nTamyzpgFD-zTG8R5Sa7hls6QzwHJjxpAGVWV3MuhwUXXA&usqp=CAU", description: "Description for Book 5", cost: "$200" }
+                ];
+
+                document.addEventListener("DOMContentLoaded", function() {
+    const urlParams = new URLSearchParams(window.location.search);
+                const bookId = urlParams.get('bookId');
+                const bookDetails = document.getElementById('bookDetails');
+                // Use querySelector for class
+                const defaultContent = document.querySelector('.defaultContent');
+
+                if (bookId) {
+        const book = books.find(book => book.id === parseInt(bookId));
+                if (book) {
+            if (bookDetails) {
+                    bookDetails.style.display = 'block'; // Show book details if bookId is present
+                document.getElementById('bookImage').src = book.image;
+                document.getElementById('bookImage').alt = book.title;
+                document.getElementById('bookTitle').textContent = book.title;
+                document.getElementById('bookDescription').textContent = book.description;
+                document.getElementById('bookCost').textContent = book.cost;
+            }
+        }
+    } else {
+        // Hide book details if no bookId is present and ensure default content is shown
+        if (bookDetails) {
+                    bookDetails.style.display = 'none';
+        }
+                if (defaultContent) {
+                    defaultContent.style.display = 'block'; // Ensure this is shown when no bookId
+        }
+    }
+
+                // Initialize quantity to 1
+                let quantity = 1;
+                const quantityDisplay = document.getElementById('quantity');
+
+    // Increment quantity
+    document.getElementById('increaseQuantity').addEventListener('click', () => {
+                    quantity++;
+                quantityDisplay.textContent = quantity;
+    });
+
+    // Decrement quantity
+    document.getElementById('decreaseQuantity').addEventListener('click', () => {
+        if (quantity > 1) {
+                    quantity--;
+                quantityDisplay.textContent = quantity;
+        }
+    });
+
+    // Add to cart functionality
+    document.getElementById('addToCart').addEventListener('click', () => {
+        if (bookId && book) {
+                    console.log(`Added ${quantity} of ${book.title} to cart.`);
+        }
+    });
+});
+  
+   
+
+    
+    document.querySelectorAll('.atc').forEach(button => {
+        button.addEventListener('click', function () {
+            var itemCountElement = document.querySelector('.item-count');
+            var itemCount = parseInt(itemCountElement.textContent, 10);
+            itemCountElement.textContent = itemCount + 1;
+        });
+    });
+        </script>
 
 </body>
 </html>
