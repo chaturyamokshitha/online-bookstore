@@ -5,27 +5,80 @@ body {
 }
 
 
-.navigation{
+.navigation {
     display: flex;
-    flex-direction: row;
-    overflow: hidden;
-      
-       
-  
-}
-.navigation img{
-    height:90px;
-    width:190px;
-    padding-right: 40rem;
-   
+    /* Use flexbox to align items */
+    align-items: center;
+    /* Align items vertically in the center */
+    width: 100%;
+
 }
 
-.navigation a{
-    padding-left: 3rem;
-    margin-top: 2rem;
-    text-decoration: none ;
+.navigation ul,
+.navigation li {
+    margin: 0;
+    margin-left: 60px;
+    padding: 0;
 }
 
+.navigation ul {
+    list-style: none;
+    width: 100%;
+}
+
+.navigation li {
+    float: left;
+    position: relative;
+    width: auto;
+}
+
+.navigation a {
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 1px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.navigation li:hover a {
+    background: aliceblue;
+}
+
+#sub {
+    visibility: hidden;
+    position: absolute;
+    right: 60px;
+
+    width: 100%;
+    top: 35px;
+    z-index: 1;
+    opacity: 0;
+
+
+}
+
+li:hover ul#sub {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+#sub li {
+    float: none;
+    width: 100%;
+}
+
+.navigation img {
+    height: 100px;
+    width: 200px;
+    padding-right: 35rem;
+}
+.navigation a span {
+    position: relative;
+bottom:10px;
+}
 .contain{
     padding:5%;
     background-color: pink;
@@ -88,6 +141,12 @@ display:flex;
 flex-direction: row;
 
 }
+.para1{
+    display: none;
+}
+.para2{
+    display:none;
+}
 
 
 
@@ -114,6 +173,7 @@ padding-top: 20px;
 }
 .newest{
     background-color: aliceblue;
+    padding-bottom: 30px;
 }
 .newest p {
     text-align: center;
@@ -129,14 +189,15 @@ padding-top: 20px;
     padding-right: 20px;
 }
 
-.atc {
-    display: none;
-}
+
 
 .books {
     display: flex;
     flex-direction: row;
     margin: 50px 100px 0px 50px;
+}
+.books a{
+    text-decoration: none;
 }
 
 .book1 {
@@ -173,24 +234,37 @@ padding-top: 20px;
 
 #cost {
     font-size: 15px;
+   
     padding-left: 70px;
     position: relative;
     color: grey;
 }
 
 
-.atc {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-}
-
-#cost:hover+.atc {
+.cost-container {
+    position: relative;
     display: inline-block;
-    padding-left: 50px;
 }
 
+.add-to-cart-btn {
+    position: absolute;
+    bottom:1px ;
+    left: 25px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    cursor: pointer;
+   background-color: aliceblue;
+ 
+   
+    border: none;
+    color: black;
+   
+}
+
+.cost-container:hover .add-to-cart-btn {
+    display: block;
+}
 
 
 
