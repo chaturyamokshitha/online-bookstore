@@ -5,6 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>signup</title>
     <style>
+ .navigation {
+    display: flex;
+    /* Use flexbox to align items */
+    align-items: center;
+    /* Align items vertically in the center */
+    width: 100%;
+
+}
+
+.navigation ul,
+.navigation li {
+    margin: 0;
+    margin-left: 60px;
+    padding: 0;
+}
+
+.navigation ul {
+    list-style: none;
+    width: 100%;
+}
+
+.navigation li {
+    float: left;
+    position: relative;
+    width: auto;
+}
+
+.navigation a {
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 1px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.navigation li:hover a {
+    background: aliceblue;
+}
+
+#sub {
+    visibility: hidden;
+    position: absolute;
+    right: 60px;
+
+    width: 100%;
+    top: 35px;
+    z-index: 1;
+    opacity: 0;
+
+
+}
+
+li:hover ul#sub {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+#sub li {
+    float: none;
+    width: 100%;
+}
+
+.navigation img {
+    height: 100px;
+    width: 200px;
+    padding-right: 35rem;
+}
+
+
+ 
         .signup{
             display: flex;
             flex-direction: column;
@@ -44,10 +117,36 @@
          a{
             text-decoration: none;
         }
+
+
+
+
+      
     </style>
 </head>
 <body>
-    <iframe src="navbar.html" name="navbar" frameborder="0" scrolling="no" width="100%" height="80px"></iframe>
+    <div class="navigation" id="home">
+        <img src="https://i.pinimg.com/200x150/9a/39/a3/9a39a344c61cb7a99517549b5acc8df7.jpg">
+        <ul>
+            <li><a href="newest.html" target="_top">HOME</a></li>
+            <li><a href="about.html" target="_top">ABOUT</a></li>
+            <li><a href="" target="_top">PRICING </a></li>
+            <li><a href="shop.html" target="_top">SHOP</a>
+                <ul id="sub">
+                    <li><a href="google.com">Romance</a></li>
+                    <li><a>Comedy</a></li>
+                    <li><a>Thriller</a></li>
+                    <li><a>Rom-Com</a></li>
+                    <li><a>Fantasy</a></li>
+                    <li><a>Drama</a></li>
+                </ul>
+            </li>
+            <li><a href="" target="_top"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li><a href="" target="_top"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><a href="signup.html" target="_top">SIGN UP</a></li>
+        </ul>
+    </div>
+
     <div class="signup">
         <h2>Create an account</h2>
        <section id="name">
@@ -75,5 +174,6 @@
         </form>
         <span>I'm already a member <a href="signin.html">sign in</a></span>
     </div>
+    <script src="https://kit.fontawesome.com/9f5026aa16.js" crossorigin="anonymous"></script>
 </body>
 </html>
